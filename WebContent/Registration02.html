@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration02.html</title>
+    <style>
+      *{
+        vertical-align: top;
+      }
+        table{
+          padding-left:15px; padding-right:15px; background-color: #F9F9F9; 
+          border: 1px solid #a1a9b6; width: 700px; height: 1000px; }
+        .t{font-size: large;}
+        .in{
+            padding-left: 60px; padding-top: 55px; width: 830px; border-top: solid black;
+            background-color: white; text-align: left;}
+      .niput{
+        padding-bottom: 10px; color:#4d4d4de8; padding-top: 10px;} 
+      #mid{ border-radius: 2px;
+        border: none;
+        width: 120px; color: white;
+        height: 40px; background-color: #343434;
+      }
+      #f{
+        border: 1px solid gray;
+        border-radius: 2px;
+        background-color:white ;
+          height:38px; width: 48px;
+      }
+      #m{ border-radius: 2px;
+          background-color:#1f4d89; color: white;
+          height:38px; width: 48px;
+          border: 1px solid gray;
+      }
+      #bir>input{
+        width: 220px;
+      }
+      #ad>input{
+        width: 200px;
+      }
+      #em>input{
+        width: 160px;
+      }
+      #em>select{
+        font-weight: bold; color:#4d4d4dcc;
+        height:38px; width:160px; border-color: #a1a9b6;
+      }
+      #option>input{
+        vertical-align:-60%;
+        width:18px; 
+      }
+      #option{
+        font-weight: bold; color:#4d4d4dcc;
+        font-size:15px;
+      }
+      #access>input{
+        width: 18px; vertical-align: -60%;
+      }
+      #access{font-weight: bold; font-size:19px;}
+
+      .in tr td>input{
+        width:400px; height:2.5em;
+        border: 1px solid #a1a9b6;
+        color:#4d4d4dcc;
+        
+      }
+      .tel>select{
+        color:#4d4d4dcc;
+        font-weight: bold; border-color: #a1a9b6;
+        width: 100px; height: 38px;
+      }
+    .ast{
+            text-align: right;
+            color: tomato;
+        }
+    .ex{
+    font-size: 15px;
+    color:#4d4d4dcc;
+    }
+    .pil{
+      color: rgba(128, 128, 128, 0.575); vertical-align:5%;
+      font-size:17px;
+    }
+    .yack{
+      color: rgba(46, 43, 226, 0.74); vertical-align:5%;
+      font-size: 13px;
+    }
+    </style>
+</head>
+<body>
+  <form action="">
+    <table>
+        <tr><td class="niput" style="text-align: right; font-size:0.8em;
+          font-weight:bold; color:#4d4d4de8;"> *필수입력사항</td></tr>
+    <td class="t">
+        <table class="in">
+      <tr>
+         <th class="ast">*</th>
+         <th>아이디 <td class="ex"><input type="text">
+        <br><br>※3~15자의 영문과 숫자만 가능합니다.
+         <td><button id="mid" style="margin-left:-180px;">중복확인</button></th>
+        </tr>
+    <tr>
+        <th class="ast">*</th>
+        <th>비밀번호 <td class="ex"> <input type="text" >
+        <br><br>※영문/숫자/특수문자 조합6~20자 이상입력해주세요.
+        <br>※1234**비밀번호는 홈페이지 사용에 제한됩니다.</td></th>
+      </tr>
+      <tr>
+        <th class="ast">*</th>
+        <th>비밀번호확인 <td > <input type="text" ></td></th>
+      </tr>
+      <tr>
+        <th class="ast">*</th>
+        <th>이름 <td > <input type="text" ></td></th>
+        <th><button id="m" style="margin-left:-180px;">여</button>
+            <button id="f">남</button></th>
+      </tr>
+      <tr>
+        <th class="ast">*</th>
+        <th>생년월일 <td id="bir"> <input type="text" 
+          value="&nbsp;&nbsp;2019-05-20"><img src="./images/cale.png"
+          width="38" alt="달력">
+        </td></th>
+      </tr>
+      <tr>
+        <th class="ast">*</th>
+        <th>주소 <td id="ad"> <input type="text" >
+          <button id="mid" style="margin-left:10px;">우편번호찾기</button>
+        <br><br><input type="text" style="width:310px;">
+        <input type="text" style="width:200px;" ><td>
+        </th>
+     
+      </tr>
+      <tr>
+        <th class="ast">*</th>
+        <th>이메일 <td id="em"> <input type="text" > <span style="vertical-align: middle;">@</span> 
+          <input type="text" > 
+          <select name="mail">
+            <option value="self">&nbsp;직접입력</option>
+            <option value="naver">&nbsp;naver.com</option>
+            <option value="nate">&nbsp;nate.com</option>
+            <option value="daum">&nbsp;daum.net</option>
+            <option value="google">&nbsp;google.co.kr</option>
+
+          </select></td></th>
+      </tr>
+      <tr>
+        <th class="ast">*</th>
+        <th >휴대폰번호 <td class="tel"> <select name="tel">
+          <option value="1">&nbsp;010</option>
+            <option value="2">&nbsp;011</option>
+            <option value="3">&nbsp;012</option>
+            <option value="7">&nbsp;070</option>
+        </select>
+          - <input type="text" style="width:120px;" >
+        - <input type="text" style="width:120px;" ></td></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>전화번호 <td class="tel"> <select name="tel">
+          <option value="01">&nbsp;02</option>
+            <option value="03">&nbsp;031</option>
+            <option value="3">&nbsp;032</option>
+            <option value="7" selected>&nbsp;070</option>
+        </select>
+          - <input type="text" style="width:120px;" >
+        - <input type="text" style="width:120px;" ></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>출판계약일 <td id="bir"> <input type="text" >
+          <img src="./images/cale.png"
+          width="38" alt="달력">
+        </td></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>출판종료일  <td id="bir"> <input type="text" >
+          <img src="./images/cale.png"
+          width="38" alt="달력">
+        </td></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>선택정보<td id="option"> <input type="checkbox">&nbsp;자비출판&nbsp;
+          <input type="checkbox">&nbsp;반기확출판&nbsp; <input type="checkbox">&nbsp;프리미엄출판&nbsp;
+          <input type="checkbox">&nbsp;출판컨설팅&nbsp; <br><input type="checkbox">&nbsp;기획출판&nbsp;
+          <input type="checkbox">&nbsp;미정&nbsp;
+        </td></th>
+      </tr>
+    </table>
+    <tr>
+    </td>
+      <td class="niput" style="font-size:24px; ">
+        이용약관동의*
+        <span class="niput" style="font-size:15px;
+          vertical-align:middle;">
+          선택항목에 동의하지 않은 경우도 회원가입및 일반적인
+          서비스를 이용할 수 있습니다.
+        </span>
+      </td>
+    </tr>
+    <td class="t">
+    <table class="in" style="height:250px; padding-bottom: 50px;
+    border-top: solid navy;" >
+      <tr>
+        <td id="access"><input type="checkbox">&nbsp;전체동의</td>
+      </tr>
+        <tr>
+          <td id="option">
+            &emsp;&emsp;<input type="checkbox" >&nbsp;이용약관&nbsp;
+           <span class="pil">(필수)</span> &emsp;<span class="yack">약관보기 ></span><br>
+           &emsp;&emsp;<input type="checkbox" >&nbsp;개인정보처리방침&nbsp;
+           <span class="pil">(필수)</span> &emsp;<span class="yack">약관보기 ></span><br>
+           &emsp;&emsp;<input type="checkbox" >&nbsp;이벤트 및 혜택 알림 수신&nbsp;
+           <span class="pil">(필수)</span><br>
+           &emsp;&emsp; &emsp;&emsp;<input type="checkbox" >&nbsp;SMS
+           &emsp;<input type="checkbox" >&nbsp;이메일
+           
+          </td>
+        </tr>
+     </td>
+     </table>
+     <tr >
+       <td colspan="3"  style="padding-top:50px; padding-bottom: 50px; text-align: center;">
+        <button style="width:200px; height:50px; background-color:
+         rgba(0, 0, 128, 0.726); color: white; border-radius:4px;">가입하기</button></td>
+     </tr>
+    </table>
+  </form>
+    <br><br><br><br>   
+</body>
+</html>
